@@ -1,14 +1,14 @@
 'use client'
 export const dynamic = 'force-dynamic'
 
-import { useState, useEffect } from 'react'
+import { useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Search } from 'lucide-react'
 import { BookGrid } from '@/components/books/BookGrid'
 import { BookFilters } from '@/components/books/BookFilters'
 import { useBooks } from '@/lib/hooks/useBooks'
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams()
   const initialQuery = searchParams.get('q') || ''
   const [search, setSearch] = useState(initialQuery)
@@ -49,11 +49,29 @@ export default function SearchPage() {
 
       {!loading && query && (
         <p className="text-stone-500 text-sm mb-6">
-          {books.length} result{books.length !== 1 ? 's' : ''} for <strong>"{query}"</strong>
+          {books.length} result{books.length !== 1 ? "s" : ""} for <strong>"{query}"</strong>
         </p>
       )}
 
-      <BookGrid books={books} loading={loading} emptyMessage={query ? `No books found for "${query}". Try a different search.` : 'Enter a search term above.'} />
+      <BookGrid books={books} loading={loading} emptyMessage={query ? "No books found for " + query + ". Try a different search." : "Enter a search term above."} />
     </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="h-10 bg-stone-100 rounded-xl animate-pulse mb-6 w-48" />
+        <div className="h-14 bg-stone-100 rounded-xl animate-pulse mb-4" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div key={i} className="aspect-[3/4] bg-stone-100 rounded-2xl animate-pulse" />
+          ))}
+        </div>
+      </div>
+    }>
+      <SearchContent />
+    </Suspense>
   )
 }
