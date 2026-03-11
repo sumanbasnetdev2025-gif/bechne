@@ -1,6 +1,5 @@
-export const dynamic = 'force-dynamic'
 'use client'
-
+export const dynamic = 'force-dynamic'
 import { useState, useEffect, useRef } from 'react'
 import { Search, ArrowRight, Star, MessageCircle, MapPin, RefreshCw, X, BookOpen } from 'lucide-react'
 import { useAuth } from '@/lib/hooks/useAuth'

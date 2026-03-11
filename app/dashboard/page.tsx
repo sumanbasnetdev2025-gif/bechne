@@ -1,5 +1,5 @@
-export const dynamic = 'force-dynamic'
 'use client'
+export const dynamic = 'force-dynamic'
 import { useEffect, useState } from 'react'
 import { List, Eye, MessageCircle, PlusCircle } from 'lucide-react'
 import { StatsCard } from '@/components/dashboard/StatsCard'
