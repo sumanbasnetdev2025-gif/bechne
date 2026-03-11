@@ -3,19 +3,14 @@ import { Toaster } from 'react-hot-toast'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Bechne — Buy & Sell Second Hand Books',
-  description: "Nepal's community for buying and selling pre-loved books. No fees, no middleman — connect directly with sellers.",
-  keywords: 'second hand books, used books, buy books, sell books, india',
+  title: 'Bechne — Buy & Sell Second Hand Books in Nepal',
+  description: "Nepal's community for buying and selling pre-loved books. No fees, no middleman.",
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         {children}
         <Toaster
           position="top-right"
