@@ -95,9 +95,9 @@ export default function ProfilePage() {
         </div>
         <div className="grid grid-cols-2 gap-5">
           <Input {...register('phone')} label="Phone Number" placeholder="+91 98765 43210" hint="shown only in chat" />
-          <Input {...register('city')} label="City" placeholder="Jhapa" />
+          <Input {...register('city')} label="City" placeholder="Kathmandu" />
         </div>
-        <Input {...register('state')} label="State" placeholder="Kathmandu" />
+        <Input {...register('state')} label="Province" placeholder="Bagmati Province" />
         <div>
           <label className="block text-sm font-semibold text-stone-700 mb-1.5">Bio <span className="font-normal text-stone-400">(optional)</span></label>
           <textarea {...register('bio')} rows={3}
