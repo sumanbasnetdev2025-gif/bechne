@@ -1,4 +1,6 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useState, useEffect } from 'react'
 import { MapPin, MessageCircle, Heart, Share2, BookOpen, Star, ChevronLeft, ChevronRight, Tag, Truck, Users, LogIn, ArrowLeft } from 'lucide-react'
 import { CONDITION_MAP, DELIVERY_MAP } from './constants'

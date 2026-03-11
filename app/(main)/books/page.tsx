@@ -1,4 +1,6 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useState } from 'react'
 import { Search } from 'lucide-react'
 import { BookGrid } from '@/components/books/BookGrid'

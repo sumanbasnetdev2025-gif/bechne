@@ -1,4 +1,6 @@
 'use client'
+export const dynamic = 'force-dynamic'
+
 import { useParams } from 'next/navigation'
 import { BookGrid } from '@/components/books/BookGrid'
 import { useBooks } from '@/lib/hooks/useBooks'

@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'covers.openlibrary.org' },
