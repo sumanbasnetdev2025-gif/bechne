@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic'
 'use client'
 import { useEffect, useState } from 'react'
 import { PlusCircle } from 'lucide-react'
 import { useAuth } from '@/lib/hooks/useAuth'
 import { createClient } from '@/lib/supabase/client'
 import type { Book } from '@/types/book'
-import { ListingTable } from '../../../components/dashboard/Listingtable'
+import { ListingTable } from '@/components/dashboard/Listingtable'
 
 export default function ListingsPage() {
   const { user } = useAuth()

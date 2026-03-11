@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 'use client'
 import { useEffect, useState } from 'react'
 import { List, Eye, MessageCircle, PlusCircle } from 'lucide-react'
@@ -77,7 +78,7 @@ export default function DashboardPage() {
               <div key={book.id} className="flex items-center justify-between bg-white rounded-xl border border-stone-100 px-4 py-3">
                 <div>
                   <div className="font-medium text-stone-800 text-sm">{book.title}</div>
-                  <div className="text-stone-400 text-xs">₹{book.asking_price} · {book.views || 0} views</div>
+                  <div className="text-stone-400 text-xs">Rs. {book.asking_price} · {book.views || 0} views</div>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${book.status === 'available' ? 'bg-emerald-100 text-emerald-700' : 'bg-stone-100 text-stone-500'}`}>
