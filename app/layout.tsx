@@ -5,6 +5,11 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Bechne — Buy & Sell Second Hand Books in Nepal',
   description: "Nepal's community for buying and selling pre-loved books. No fees, no middleman.",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -16,10 +21,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           position="top-right"
           toastOptions={{
             style: {
-              background: '#1c1917',
-              color: '#fafaf9',
-              borderRadius: '12px',
-              fontSize: '14px',
+              background: "#1c1917",
+              color: "#fafaf9",
+              borderRadius: "12px",
+              fontSize: "14px",
             },
           }}
         />
