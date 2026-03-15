@@ -2,7 +2,7 @@ import { BookOpen } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="border-t border-stone-100 py-10 px-4 bg-stone-50">
+    <footer className="border-t border-stone-200 py-10 px-4 bg-stone-100">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -42,7 +42,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-stone-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-2">
+        <div className="border-t border-stone-200 pt-6 flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-stone-400 text-sm">© {new Date().getFullYear()} Bechne. <br/> For Everyone at every corner of the world</p>
           <p className="text-stone-400 text-xs">Free to list · No commission · No fees ever</p>
         </div>
