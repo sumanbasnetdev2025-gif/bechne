@@ -43,7 +43,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-stone-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-2">
-          <p className="text-stone-400 text-sm">© {new Date().getFullYear()} Bechne. Made with ❤️ in Nepal 🇳🇵</p>
+          <p className="text-stone-400 text-sm">© {new Date().getFullYear()} Bechne. <br/> For Everyone at every corner of the world</p>
           <p className="text-stone-400 text-xs">Free to list · No commission · No fees ever</p>
         </div>
       </div>

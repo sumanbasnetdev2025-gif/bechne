@@ -80,10 +80,10 @@ export default function HomePage() {
         </div>
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-5">
-            <span>🇳🇵</span> Nepal's book exchange community
+             Nepal's book exchange community
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-stone-900 leading-tight mb-5">
-            Give books a<em className="text-amber-700 not-italic"> second </em>life.
+            Give books a<em className="text-amber-700 not-italic"> Second </em>life.
           </h1>
           <p className="text-stone-600 text-base sm:text-lg mb-3 max-w-2xl mx-auto leading-relaxed">
             Find a book you love, message the seller directly, and agree on a deal — simple, personal, and no middleman.
@@ -157,9 +157,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-3 divide-x divide-amber-100 text-center">
             {[
-              { value: '12,000+', label: 'Books Listed' },
-              { value: '5,400+', label: 'Readers' },
-              { value: 'Rs. 8.2L+', label: 'Saved' },
+              { value: '1000+', label: 'Books Listed' },
+              { value: '500+', label: 'Readers' },
+              { value: 'Rs. 1.2L+', label: 'Saved' },
             ].map((s) => (
               <div key={s.label} className="py-3 sm:py-4 px-2">
                 <div className="text-lg sm:text-3xl font-bold text-amber-800 mb-0.5">{s.value}</div>
